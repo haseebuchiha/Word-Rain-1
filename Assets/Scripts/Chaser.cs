@@ -12,7 +12,7 @@ public class Chaser : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		 speed = Random.Range(10.0f, 50.0f); // get random speed values everytime
+		 //speed = Random.Range(10.0f, 50.0f); // get random speed values everytime
 
 		// if no target specified, assume the player
 		if (target == null) {
