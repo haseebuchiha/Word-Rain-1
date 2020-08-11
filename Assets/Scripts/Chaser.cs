@@ -8,7 +8,6 @@ public class Chaser : MonoBehaviour {
 	private float speed = 30.0f;
 	public float minDist = 1f;
 	public Transform target;
-	public string lul = "LLUL";
 
 	// Use this for initialization
 	void Start () 
