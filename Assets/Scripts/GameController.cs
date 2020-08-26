@@ -57,12 +57,11 @@ public class GameController : MonoBehaviour
             alphabet = hit.transform.name;
             
             if(!alphabet.Equals("floor")){ // destroy any object that was hit, except floor. Don't wanna destroy the floor
-                Destroy(hit.transform.gameObject);
-
                 if (explosionPrefab != null)
                 {
                     Instantiate(explosionPrefab, hit.transform.position, hit.transform.rotation);
                 }
+                Destroy(hit.transform.gameObject);
             }
 
             alphabet = alphabet.ToLower();
