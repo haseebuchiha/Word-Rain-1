@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Lumin;
 
 public class Health : MonoBehaviour {
 	
@@ -60,6 +61,7 @@ public class Health : MonoBehaviour {
 					// do nothing, death must be handled in another way elsewhere
 					break;
 				}
+				//Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 				Destroy(gameObject);
 			}
 		}
