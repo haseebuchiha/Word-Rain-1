@@ -65,7 +65,7 @@ public class GameController : MonoBehaviour
             }
 
             alphabet = alphabet.ToLower();
-            index = currentWordList.IndexOf(alphabet[0].ToString());
+            index = currentWordList.IndexOf(alphabet[0].ToString()); //alphabet name has "clone" appended. so take 0 index
 
             if(index != -1){ // check if alphabet we clicked exists in current word
                 currentWordList.RemoveAt(index); //its been clicked, dont need it no more
@@ -87,6 +87,10 @@ public class GameController : MonoBehaviour
                 RoundOver();
             }
         }
+    }
+
+    public string getCurrentAlpha(){
+        return currentWordList[0];
     }
 
     void SetNextWord(){
