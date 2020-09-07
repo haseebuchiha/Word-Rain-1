@@ -13,6 +13,7 @@ public class Health : MonoBehaviour {
 	public bool isAlive = true;	
 
 	public GameObject explosionPrefab;
+	public GameObject smokePrefab;
 	
 	public deathAction onLivesGone = deathAction.doNothingWhenDead;
 	
@@ -38,6 +39,10 @@ public class Health : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		if (smokePrefab != null)
+		{
+			Instantiate(smokePrefab, transform.position, Quaternion.identity);
+		}
 		if (healthPoints <= 0) {				// if the object is 'dead'
 			numberOfLives--;					// decrement # of lives, update lives GUI
 			

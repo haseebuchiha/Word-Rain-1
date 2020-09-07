@@ -66,6 +66,8 @@ MonoBehaviour:
   isAlive: 1
   explosionPrefab: {fileID: 4268039024717503022, guid: 0d7605c8a77b8564da983e79a64aedeb,
     type: 3}
+  smokePrefab: {fileID: 6030418917398652422, guid: 459f83e71b2a8df48964de9ba5289ecf,
+    type: 3}
   onLivesGone: 1
   LevelToLoad: 
 --- !u!54 &4771810285018369009
